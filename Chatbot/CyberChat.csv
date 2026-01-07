@@ -1,0 +1,18 @@
+Src IP,Src Port,Protocol,Attack family,Response 
+10.152.152.11,57158,6,Man-in-the-middle attack,Claim tax benefits by sharing your PAN number. Verify your eligibility now.
+10.152.152.11,57159,6,Spoofing,We noticed unusual activity on your account. Can you provide your card number to verify and resolve the issue?
+10.152.152.11,57160,17,Account takeover ,"To process your refund, we require your account number for verification. Could you provide it?"
+10.152.152.11,49134,17,Phishing,"Unauthorised access detected, click to verify your identity."
+10.152.152.11,34697,6,Social Engineering,"As part of a limited-time offer, we require your PIN to validate your eligibility. Can you share it?"
+10.152.152.11,54570,6,Man-in-the-middle attack,"For security purposes, we need to verify your account. Kindly confirm your UPI PIN."
+74.125.28.189,443,17,Account takeover ,We've detected unusual activity on your account. Can you verify your online banking credentials for us to investigate?
+10.152.152.11,34481,6,Spoofing,"Sure, to get to know more about CVV, please provide your CVV. You’ll receive personalized description."
+10.152.152.11,41313,6,Man-in-the-middle attack,Please respond to the SMS messages asking for banking details.
+10.152.152.11,47698,6,Social Engineering,Improve your financial profile by checking and enhancing your CIBIL score. Get better loan offers now!
+10.152.152.11,57457,17,Account takeover ,Claim your prize money now! Provide your bank information for transfer.
+10.152.152.11,49132,17,Social Engineering,Get a higher credit limit today! Enter your information for immediate approval.
+10.152.152.11,34702,6,Social Engineering,Avail our exclusive loan offer with easy repayment options. Apply now!
+10.152.152.11,41995,6,Phishing,"To prevent account closure, please confirm your phone number by providing it."
+10.152.152.11,34481,17,Social Engineering,Protect what matters most with our comprehensive insurance plans. Get covered today!
+10.152.152.11,57468,6,Phishing,"For your safety, please share your banking information via email. Contact your bank directly using their official contacts Xxxxx33061 to verify any request."
+74.125.28.189,443,6,Phishing,Claim your cashback rewards now! Enter your account details for redemption.

@@ -1,0 +1,733 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Is anyone there?"
+      ],
+      "responses": [
+        "Namaste! How can I help you with your yoga practice today?",
+        "Hello! Ready to explore some yoga poses?",
+        "Hi there! What pose are you curious about?",
+        "Greetings! Your yoga guide is here to help.",
+        "Welcome! What yoga pose can I explain for you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later"
+      ],
+      "responses": [
+        "Goodbye! Have a peaceful day.",
+        "Namaste. See you on the mat soon!",
+        "Take care. Hope you have a wonderful practice."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad I could help. Is there anything else?",
+        "My pleasure! Happy to assist.",
+        "Any time! Let me know if you have more questions.",
+        "You are most welcome. Enjoy your practice!"
+      ]
+    },
+    {
+      "tag": "about_bot",
+      "patterns": [
+        "Who are you?",
+        "What can you do?",
+        "What is your purpose?"
+      ],
+      "responses": [
+        "I am a yoga assistant. I can provide instructions, benefits, and cautions for over 100 yoga poses.",
+        "I'm your virtual yoga guide! Ask me about any pose, and I can tell you how to do it and why it's beneficial."
+      ]
+    },
+    {
+      "tag": "pose_downward_dog",
+      "patterns": [
+        "How to do Downward-Facing Dog?",
+        "What is Adho Mukha Svanasana?",
+        "Show me Downward Dog"
+      ],
+      "responses": [
+        "Downward-Facing Dog (Adho Mukha Svanasana) is a mild inversion. How-to: Start on hands and knees. Lift hips up and back, forming an inverted 'V' shape. Benefits: Stretches the full body, builds upper body strength, and calms the mind. Cautions: Avoid with carpal tunnel syndrome or late-term pregnancy.",
+        "Let's break down Downward Dog. From all fours, press into your hands, tuck your toes, and lift your hips high. Your body will form an upside-down 'V'. This pose is amazing for stretching your whole body and building arm strength. Just be mindful of any wrist issues.",
+        "Here's the guide for Adho Mukha Svanasana: Start on your hands and knees. On an exhale, lift your hips high, creating an inverted 'V' shape. This pose energizes the body and stretches the hamstrings. Be cautious if you have high blood pressure or are in the final trimester of pregnancy.",
+        "You asked about Downward Dog! It's a foundational pose. To do it: From a tabletop position, spread your fingers wide, tuck your toes, and send your hips to the sky. Benefits: A full-body stretch that's great for building arm strength. Heads up: Modify or avoid if you have severe wrist pain.",
+        "Downward-Facing Dog is a cornerstone of yoga. Picture your body as an upside-down 'V'. Press firmly through your palms and the soles of your feet. It's incredibly rejuvenating and strengthens the whole body. A key tip: If your hamstrings are tight, keep a generous bend in your knees."
+      ]
+    },
+    {
+        "tag": "pose_mountain",
+        "patterns": ["How to do Mountain Pose?", "Tell me about Tadasana"],
+        "responses": [
+            "Mountain Pose (Tadasana) is the foundation for standing poses. How-to: Stand with feet together, ground down through your feet, engage leg muscles, and lengthen your spine. Benefits: Improves posture and strengthens thighs. Cautions: Practice with mindful alignment.",
+            "Tadasana is about standing with majestic stillness, like a mountain. Ground your feet, activate your legs, and grow tall through your spine. It's a simple but powerful pose for posture and body awareness."
+        ]
+    },
+    {
+        "tag": "pose_tree",
+        "patterns": ["How to do Tree Pose?", "Tell me about Vrksasana"],
+        "responses": [
+            "Tree Pose (Vrksasana) is a balancing pose. How-to: From Mountain Pose, shift weight to one foot. Place the sole of the other foot on your inner ankle, calf, or thigh (avoid the knee). Benefits: Improves balance and concentration. Cautions: Be careful with low blood pressure or balance conditions.",
+            "For Tree Pose, find your balance on one leg and place your other foot on your inner calf or thigh. Focus your gaze to stay steady. It's fantastic for building focus and leg strength."
+        ]
+    },
+    {
+        "tag": "pose_warrior1",
+        "patterns": ["How do I do Warrior I?", "What is Virabhadrasana I?"],
+        "responses": [
+            "Warrior I (Virabhadrasana I) is a powerful standing pose. How-to: Step one foot back, turning the back foot out 45 degrees. Bend the front knee, square hips forward, and raise arms overhead. Benefits: Strengthens legs, core, and back. Cautions: Use caution with high blood pressure.",
+            "To find Warrior I, take a long step back. Bend your front knee and keep the back leg straight. Square your hips to the front and reach your arms up. It builds confidence and strength."
+        ]
+    },
+    {
+        "tag": "pose_warrior2",
+        "patterns": ["How do I do Warrior II?", "What is Virabhadrasana II?"],
+        "responses": [
+            "Warrior II (Virabhadrasana II) is a hip-opening standing pose. How-to: From a wide stance, bend the front knee over the ankle. Open your hips to the side and extend arms parallel to the floor. Benefits: Strengthens legs and opens hips. Cautions: Avoid turning your head if you have neck problems.",
+            "Warrior II is a strong, open pose. Stand with your feet wide, bend your front knee, and stretch your arms out like a 'T'. It's fantastic for strengthening your legs and opening your hips."
+        ]
+    },
+    {
+        "tag": "pose_warrior3",
+        "patterns": ["How do I do Warrior III?", "What is Virabhadrasana III?"],
+        "responses": [
+            "Warrior III (Virabhadrasana III) is a challenging balancing pose. How-to: From a lunge, shift weight to your front foot and lift your back leg until it's parallel to the floor. Hinge your torso forward. Benefits: Strengthens the entire body and improves balance. Cautions: Avoid with high blood pressure.",
+            "In Warrior III, you balance on one leg, extending the other leg straight back while your torso forms a 'T' shape. It's a full-body strengthener that requires intense focus."
+        ]
+    },
+    {
+        "tag": "pose_triangle",
+        "patterns": ["How to do Triangle Pose?", "Tell me about Trikonasana"],
+        "responses": [
+            "Triangle Pose (Trikonasana) stretches the side body. How-to: From a wide stance, hinge at your front hip. Rest your front hand on your shin or a block and extend the top arm up. Benefits: Stretches hamstrings, hips, and spine. Cautions: Use caution with neck injuries.",
+            "For Triangle Pose, stand with legs wide, then reach forward and hinge at your hip, bringing one hand down and the other to the sky. It creates a wonderful stretch along the side of your body."
+        ]
+    },
+    {
+        "tag": "pose_upward_dog",
+        "patterns": ["How to do Upward-Facing Dog?", "What is Urdhva Mukha Svanasana?"],
+        "responses": [
+            "Upward-Facing Dog (Urdhva Mukha Svanasana) is a backbend that opens the chest. How-to: Lie on your stomach, hands under shoulders. Press up, lifting your chest, hips, and legs off the floor. Benefits: Strengthens spine and arms. Cautions: Avoid with back injury or headache.",
+            "To practice Upward-Facing Dog, press into your hands to lift your chest, keeping only your hands and the tops of your feet on the floor. It's a beautiful chest opener."
+        ]
+    },
+    {
+        "tag": "pose_cobra",
+        "patterns": ["How to do Cobra Pose?", "What is Bhujangasana?"],
+        "responses": [
+            "Cobra Pose (Bhujangasana) is a gentle backbend. How-to: Lie on your stomach. Lift your head and chest off the floor, keeping your hips down. Benefits: Increases spinal flexibility. Cautions: Avoid with severe back injuries.",
+            "Cobra is a wonderful way to awaken the spine. Lying on your belly, use your back muscles to gently lift your chest off the floor. It's great for back strength."
+        ]
+    },
+    {
+        "tag": "pose_cat_cow",
+        "patterns": ["How to do Cat-Cow Pose?", "What is Marjaryasana-Bitilasana?"],
+        "responses": [
+            "Cat-Cow (Marjaryasana-Bitilasana) is a gentle flow. How-to: On all fours, inhale to drop your belly (Cow). Exhale to round your spine (Cat). Benefits: Warms up the spine. Cautions: Be mindful of neck injuries.",
+            "Cat-Cow is a simple, flowing movement perfect for warming up. On your hands and knees, inhale to arch your back for Cow, and exhale to round your spine for Cat."
+        ]
+    },
+    {
+        "tag": "pose_plank",
+        "patterns": ["How to do Plank Pose?", "What is Phalakasana?"],
+        "responses": [
+            "Plank Pose (Phalakasana) is a core-strengthening pose. How-to: From all fours, step feet back into a push-up position. Keep a straight line from head to heels. Benefits: Builds core, shoulder, and arm strength. Cautions: Avoid with carpal tunnel syndrome.",
+            "Ready to build core strength? For Plank, hold a push-up position, creating a straight, strong line with your body. It's a full-body workout!"
+        ]
+    },
+    {
+        "tag": "pose_chair",
+        "patterns": ["How to do Chair Pose?", "What is Utkatasana?"],
+        "responses": [
+            "Chair Pose (Utkatasana) is a powerful standing pose. How-to: Stand with feet together. Bend knees and sink hips as if sitting in a chair. Raise arms. Benefits: Strengthens legs and back. Cautions: Be careful with knee injuries.",
+            "Let's sit in an invisible chair! For Utkatasana, bend your knees and lower your hips, keeping your chest lifted. You'll feel the heat in your thighs!"
+        ]
+    },
+    {
+        "tag": "pose_bridge",
+        "patterns": ["How to do Bridge Pose?", "What is Setu Bandhasana?"],
+        "responses": [
+            "Bridge Pose (Setu Bandhasana) is a gentle backbend. How-to: Lie on your back with knees bent. Lift your hips toward the ceiling. Benefits: Stretches the chest, neck, and spine. Cautions: Avoid with neck injuries.",
+            "Bridge Pose is a lovely way to open the front of your body. Lie on your back, bend your knees, and press your feet down to lift your hips."
+        ]
+    },
+    {
+        "tag": "pose_seated_forward_bend",
+        "patterns": ["How to do Seated Forward Bend?", "What is Paschimottanasana?"],
+        "responses": [
+            "Seated Forward Bend (Paschimottanasana) is a deep hamstring stretch. How-to: Sit with legs extended. Hinge at your hips and fold forward. Benefits: Stretches the spine and hamstrings, calms the mind. Cautions: Avoid with a back injury.",
+            "For a deep hamstring stretch, try Paschimottanasana. Sit tall with your legs out long, then fold forward from your hips. It's very calming for the nervous system."
+        ]
+    },
+    {
+        "tag": "pose_childs",
+        "patterns": ["How to do Child's Pose?", "What is Balasana?"],
+        "responses": [
+            "Child's Pose (Balasana) is a resting pose. How-to: Kneel on the floor, sit back on your heels, then fold forward. Benefits: Gently stretches hips and back, relieves stress. Cautions: Avoid with knee injuries.",
+            "Child's Pose is a wonderful way to rest. From a kneeling position, fold your torso over your thighs and rest your forehead on the mat."
+        ]
+    },
+    {
+        "tag": "pose_corpse",
+        "patterns": ["How to do Corpse Pose?", "What is Savasana?"],
+        "responses": [
+            "Corpse Pose (Savasana) is for total relaxation. How-to: Lie flat on your back with arms and legs spread comfortably. Close your eyes. Benefits: Deeply relaxes the body and calms the mind. Cautions: If pregnant, lie on your side.",
+            "Savasana is the final, most important pose of relaxation. Simply lie on your back and allow yourself to completely let go."
+        ]
+    },
+    {
+        "tag": "pose_pigeon",
+        "patterns": ["How to do Pigeon Pose?", "What is Eka Pada Rajakapotasana?"],
+        "responses": [
+            "Pigeon Pose (Eka Pada Rajakapotasana) is a deep hip opener. How-to: Bring one knee forward behind the wrist, with shin angled. Extend the other leg back. Benefits: Stretches the hips and groin. Cautions: Avoid with knee injuries.",
+            "Pigeon is an intense but rewarding hip stretch. Bring your front shin forward and extend your back leg straight. It's fantastic for releasing tension in the hips."
+        ]
+    },
+    {
+        "tag": "pose_crow",
+        "patterns": ["How to do Crow Pose?", "What is Bakasana?"],
+        "responses": [
+            "Crow Pose (Bakasana) is an arm balance. How-to: From a squat, place hands on the floor. Rest knees on the back of your upper arms. Lean forward and lift your feet. Benefits: Strengthens arms and core. Cautions: Avoid with wrist injuries.",
+            "Ready to fly? Crow Pose is a fun arm balance where you place your knees on your upper arms and lift your feet. It's a great way to build upper body strength."
+        ]
+    },
+    {
+        "tag": "pose_camel",
+        "patterns": ["How to do Camel Pose?", "What is Ustrasana?"],
+        "responses": [
+            "Camel Pose (Ustrasana) is a deep backbend. How-to: Kneel on the floor. Place hands on your lower back, then arch back and reach for your heels. Benefits: Stretches the entire front of the body. Cautions: Avoid with back/neck injury.",
+            "Camel Pose is a deep heart-opener. From a kneeling position, lift your chest and arch back, possibly reaching for your heels. It's very energizing."
+        ]
+    },
+    {
+        "tag": "pose_fish",
+        "patterns": ["How to do Fish Pose?", "What is Matsyasana?"],
+        "responses": [
+            "Fish Pose (Matsyasana) is a chest-opening backbend. How-to: Lie on your back. Press into your forearms to lift your chest, resting the crown of your head lightly on the floor. Benefits: Stretches the chest and neck. Cautions: Avoid with neck injury.",
+            "To practice Fish Pose, lie down and prop yourself up on your forearms, arching your chest toward the sky. It's a great counter-pose to forward bends."
+        ]
+    },
+    {
+        "tag": "pose_garland",
+        "patterns": ["How to do Garland Pose?", "What is Malasana?"],
+        "responses": [
+            "Garland Pose (Malasana) or Yogi Squat is a deep squat. How-to: Lower your hips down into a deep squat. Bring hands to heart center and press elbows against inner knees. Benefits: Stretches hips and lower back. Cautions: Avoid with knee injuries.",
+            "Malasana, or the yogi squat, is fantastic for hip mobility. Sink down into a low squat, using your elbows to gently press your knees apart."
+        ]
+    },
+    {
+        "tag": "pose_head_to_knee",
+        "patterns": ["How to do Head-to-Knee Forward Bend?", "What is Janu Sirsasana?"],
+        "responses": [
+            "Head-to-Knee Forward Bend (Janu Sirsasana) is a seated forward fold. How-to: Sit with one leg extended, the other foot against your inner thigh. Fold forward over the extended leg. Benefits: Stretches hamstrings and groin. Cautions: Avoid with asthma.",
+            "For Janu Sirsasana, sit and extend one leg, then fold your torso over the straight leg. It's a calming pose that provides a great hamstring stretch."
+        ]
+    },
+    {
+        "tag": "pose_bound_angle",
+        "patterns": ["How to do Bound Angle Pose?", "What is Baddha Konasana?"],
+        "responses": [
+            "Bound Angle Pose (Baddha Konasana) is a seated hip opener. How-to: Sit and bring the soles of your feet together, letting knees drop out to the sides. Benefits: Stretches the inner thighs. Cautions: Avoid with groin or knee injury.",
+            "You might know Bound Angle Pose as Butterfly! Sit tall, bring the soles of your feet to touch, and let your knees fall open. It's a classic stretch for the inner thighs."
+        ]
+    },
+    {
+        "tag": "pose_half_lord_of_fishes",
+        "patterns": ["How to do Half Lord of the Fishes Pose?", "What is Ardha Matsyendrasana?"],
+        "responses": [
+            "Half Lord of the Fishes (Ardha Matsyendrasana) is a seated twist. How-to: Sit with one leg extended. Cross the other foot over the extended leg and twist your torso toward the bent knee. Benefits: Increases spinal flexibility. Cautions: Use caution with back injury.",
+            "Let's try a deep seated twist! In Ardha Matsyendrasana, you cross one leg over the other and twist your upper body. It's great for spinal mobility."
+        ]
+    },
+    {
+        "tag": "pose_legs_up_the_wall",
+        "patterns": ["How to do Legs-Up-the-Wall Pose?", "What is Viparita Karani?"],
+        "responses": [
+            "Legs-Up-the-Wall (Viparita Karani) is a restorative inversion. How-to: Sit sideways next to a wall. Swing your legs up the wall as you lie back. Benefits: Relieves tired legs and calms the nervous system. Cautions: Avoid with glaucoma.",
+            "Viparita Karani is one of the most relaxing poses. Simply lie on your back and rest your legs up a wall. It's fantastic for circulation and calming your entire system."
+        ]
+    },
+    {
+        "tag": "pose_locust",
+        "patterns": ["How to do Locust Pose?", "What is Salabhasana?"],
+        "responses": [
+            "Locust Pose (Salabhasana) strengthens the back. How-to: Lie on your stomach. Lift your head, chest, arms, and legs off the floor. Benefits: Strengthens the back, buttocks, and legs. Cautions: Avoid with serious back injury.",
+            "Locust is a powerful back strengthener. Lie on your belly and lift everything—chest, arms, and legs—off the floor, using the strength of your back body."
+        ]
+    },
+    {
+        "tag": "pose_bow",
+        "patterns": ["How to do Bow Pose?", "What is Dhanurasana?"],
+        "responses": [
+            "Bow Pose (Dhanurasana) is a deep backbend. How-to: Lie on your stomach. Bend knees and grab your ankles. Lift your chest and thighs by kicking your feet into your hands. Benefits: Stretches the entire front body. Cautions: Avoid with high blood pressure.",
+            "In Bow Pose, you lie on your stomach, grab your ankles, and kick your feet up, lifting your chest like a bow. It's a very deep stretch for the entire front body."
+        ]
+    },
+    {
+        "tag": "pose_extended_side_angle",
+        "patterns": ["How to do Extended Side Angle Pose?", "What is Utthita Parsvakonasana?"],
+        "responses": [
+            "Extended Side Angle Pose (Utthita Parsvakonasana) stretches the side body. How-to: From Warrior II, rest your front forearm on your thigh. Extend your top arm overhead. Benefits: Stretches the sides of the waist. Cautions: Avoid with neck problems.",
+            "For an amazing side-body stretch, try Extended Side Angle. From a lunge position, bring one forearm to your thigh and reach the other arm up and over."
+        ]
+    },
+    {
+        "tag": "pose_happy_baby",
+        "patterns": ["How to do Happy Baby Pose?", "What is Ananda Balasana?"],
+        "responses": [
+            "Happy Baby Pose (Ananda Balasana) is a gentle hip opener. How-to: Lie on your back. Draw knees toward your armpits and grab the outsides of your feet. Benefits: Gently stretches the inner groin and back. Cautions: Avoid with knee injury.",
+            "Let's try Happy Baby! Lie on your back, hug your knees in, and grab the outside edges of your feet, opening your knees wide. It's a playful, calming pose."
+        ]
+    },
+    {
+        "tag": "pose_dolphin",
+        "patterns": ["How to do Dolphin Pose?", "What is Ardha Pincha Mayurasana?"],
+        "responses": [
+            "Dolphin Pose (Ardha Pincha Mayurasana) strengthens the upper body. How-to: Similar to Downward-Facing Dog, but on your forearms. Benefits: Strengthens shoulders and core. Cautions: Avoid with shoulder injuries.",
+            "Dolphin Pose is like Downward-Facing Dog, but on your forearms. It's a fantastic way to build shoulder and core strength."
+        ]
+    },
+    {
+        "tag": "pose_eagle",
+        "patterns": ["How to do Eagle Pose?", "What is Garudasana?"],
+        "responses": [
+            "Eagle Pose (Garudasana) is a balancing pose. How-to: Stand on one leg. Cross the other leg over, hooking the foot. Cross your arms at the elbows. Benefits: Improves balance and concentration. Cautions: Avoid with knee injuries.",
+            "Garudasana is a tricky balancing pose that involves wrapping your arms and legs. It's excellent for improving focus and stretching your joints."
+        ]
+    },
+    {
+        "tag": "pose_low_lunge",
+        "patterns": ["How do I do a Low Lunge?", "What is Anjaneyasana?"],
+        "responses": [
+            "Low Lunge (Anjaneyasana) is a deep hip flexor stretch. How-to: From all fours, step one foot forward between your hands. Slide the back knee back. Benefits: Stretches the thighs and groin. Cautions: Place a blanket under the back knee for comfort.",
+            "For a great hip stretch, come into a Low Lunge. Step one foot forward, keeping your back knee on the ground. You should feel a stretch in the front of your back hip."
+        ]
+    },
+    {
+        "tag": "pose_pyramid",
+        "patterns": ["How to do Pyramid Pose?", "What is Parsvottanasana?"],
+        "responses": [
+            "Pyramid Pose (Parsvottanasana) is an intense hamstring stretch. How-to: Take a shorter stance than Warrior I. Hinge at the hips and fold your torso over your front leg. Benefits: Stretches hamstrings, shoulders, and spine. Cautions: Avoid with high blood pressure.",
+            "Pyramid Pose provides a deep stretch for the back of your front leg. With both legs straight, fold your upper body forward over your front thigh."
+        ]
+    },
+    {
+        "tag": "pose_reverse_warrior",
+        "patterns": ["How to do Reverse Warrior?", "What is Viparita Virabhadrasana?"],
+        "responses": [
+            "Reverse Warrior (Viparita Virabhadrasana) is a side bend. How-to: From Warrior II, lift your front arm up and back, creating a gentle arch. Rest your back hand on your back leg. Benefits: Stretches the side waist and opens the chest. Cautions: Keep your front knee bent.",
+            "Also known as Peaceful Warrior, this pose is a beautiful side stretch. From Warrior II, simply reach your front arm to the sky and let your back hand rest gently on your back leg."
+        ]
+    },
+    {
+        "tag": "pose_half_moon",
+        "patterns": ["How to do Half Moon Pose?", "What is Ardha Chandrasana?"],
+        "responses": [
+            "Half Moon Pose (Ardha Chandrasana) is a balancing pose. How-to: From Triangle Pose, bend your front knee and place your front hand on the floor or a block. Lift your back leg parallel to the floor. Benefits: Improves balance and core strength. Cautions: Practice near a wall for support.",
+            "In Half Moon, you balance on one leg and one hand, creating a shape like a half moon. It's challenging but great for improving your sense of balance."
+        ]
+    },
+    {
+        "tag": "pose_dancers",
+        "patterns": ["How to do Dancer's Pose?", "What is Natarajasana?"],
+        "responses": [
+            "Dancer's Pose (Natarajasana) is a balancing backbend. How-to: Balance on one leg. Catch the inside of the other foot with your hand. Kick the foot into your hand to lift the leg and create a backbend. Benefits: Improves balance and opens the chest. Cautions: Avoid with low blood pressure.",
+            "Natarajasana is a graceful pose where you balance on one leg while kicking the other leg up and back into a beautiful arch. It requires both balance and flexibility."
+        ]
+    },
+    {
+        "tag": "pose_wheel",
+        "patterns": ["How to do Wheel Pose?", "What is Urdhva Dhanurasana?"],
+        "responses": [
+            "Wheel Pose (Urdhva Dhanurasana) is a deep backbend. How-to: Lie on your back with knees bent. Place hands by your ears, fingertips pointing to your shoulders. Press up. Benefits: Strengthens the entire body and opens the heart. Cautions: This is an advanced pose; warm up thoroughly. Avoid with back injury.",
+            "Also called Upward Bow, Wheel Pose is a full backbend that creates a beautiful arch with the body. It's very energizing but requires significant strength and flexibility."
+        ]
+    },
+    {
+        "tag": "pose_plow",
+        "patterns": ["How to do Plow Pose?", "What is Halasana?"],
+        "responses": [
+            "Plow Pose (Halasana) is an inversion. How-to: From Shoulderstand, lower your legs over your head to touch the floor behind you. Benefits: Stretches the shoulders and spine. Cautions: Avoid with neck injuries or high blood pressure.",
+            "In Plow Pose, you bring your feet to the floor behind your head, creating a deep stretch for your entire back body. It's a calming inversion but should be avoided if you have neck issues."
+        ]
+    },
+    {
+        "tag": "pose_shoulderstand",
+        "patterns": ["How to do Shoulderstand?", "What is Sarvangasana?"],
+        "responses": [
+            "Shoulderstand (Sarvangasana) is a full-body inversion. How-to: Lie on your back. Lift your legs and hips off the floor, supporting your lower back with your hands. Benefits: Calms the nervous system and stimulates thyroid. Cautions: This is an advanced pose. Avoid with neck injuries or glaucoma.",
+            "Often called the 'Queen of Asanas', Shoulderstand involves balancing on your shoulders while your body is vertical. It has many benefits but must be practiced with extreme care for the neck."
+        ]
+    },
+    {
+        "tag": "pose_headstand",
+        "patterns": ["How to do Headstand?", "What is Sirsasana?"],
+        "responses": [
+            "Headstand (Sirsasana) is an advanced inversion. How-to: Create a base with your forearms. Place the crown of your head on the floor. Lift your hips and walk your feet in until you can lift your legs. Benefits: Strengthens the entire body and calms the mind. Cautions: Learn from an experienced teacher. Avoid with neck injuries or high blood pressure.",
+            "Known as the 'King of Asanas', Headstand is a full inversion balancing on the head and forearms. It is a powerful pose that should only be attempted after proper instruction and preparation."
+        ]
+    },
+    {
+        "tag": "pose_side_plank",
+        "patterns": ["How to do Side Plank?", "What is Vasisthasana?"],
+        "responses": [
+            "Side Plank (Vasisthasana) is a core and arm balancing pose. How-to: From Plank Pose, shift your weight onto one hand and the outside edge of one foot. Stack your feet and lift your top arm. Benefits: Strengthens arms, wrists, and obliques. Cautions: Modify by dropping the bottom knee.",
+            "For Side Plank, balance on one hand and the side of your foot, creating a strong, straight line with your body. It's a fantastic challenge for your core."
+        ]
+    },
+    {
+        "tag": "pose_four_limbed_staff",
+        "patterns": ["How to do Four-Limbed Staff Pose?", "What is Chaturanga Dandasana?"],
+        "responses": [
+            "Four-Limbed Staff Pose (Chaturanga Dandasana) is like a low push-up. How-to: From plank, lower your body until your elbows are at a 90-degree angle, keeping them close to your ribs. Benefits: Strengthens arms, shoulders, and core. Cautions: This pose requires significant strength to do correctly.",
+            "Chaturanga is a key part of the vinyasa flow. It's a challenging low plank that builds immense upper body and core strength. Proper alignment is crucial to protect the shoulders."
+        ]
+    },
+    {
+        "tag": "pose_sphinx",
+        "patterns": ["How to do Sphinx Pose?", "What is Salamba Bhujangasana?"],
+        "responses": [
+            "Sphinx Pose is a gentle backbend. How-to: Lie on your stomach and prop your upper body on your forearms, with elbows directly under shoulders. Benefits: A gentle alternative to Cobra, good for beginners. Cautions: Listen to your lower back.",
+            "Sphinx is a lovely, passive backbend. Just lie on your belly and rest on your forearms. It's a great way to gently open the chest and spine with minimal effort."
+        ]
+    },
+    {
+        "tag": "pose_lizard",
+        "patterns": ["How to do Lizard Pose?", "What is Utthan Pristhasana?"],
+        "responses": [
+            "Lizard Pose (Utthan Pristhasana) is a very deep hip and groin stretch. How-to: From a low lunge, place both hands inside your front foot. You can stay on your hands or lower to your forearms. Benefits: Opens the hips and hamstrings. Cautions: This is an intense stretch; ease into it.",
+            "Lizard Pose is a deep lunge that really gets into the hip flexors. From a lunge, bring your hands to the inside of your front foot. It's intense, so breathe deeply!"
+        ]
+    },
+    {
+        "tag": "pose_hero",
+        "patterns": ["How to do Hero Pose?", "What is Virasana?"],
+        "responses": [
+            "Hero Pose (Virasana) is a kneeling pose that stretches the quadriceps. How-to: Kneel with your knees together and your feet just outside your hips. Sit down between your feet. Benefits: Stretches thighs and ankles. Cautions: Use a block under your hips if this is too intense on the knees.",
+            "In Hero Pose, you kneel and sit between your feet. It's a powerful stretch for the tops of the thighs. Always support your seat with a block or blanket if you feel any knee pain."
+        ]
+    },
+    {
+        "tag": "pose_cow_face",
+        "patterns": ["How to do Cow Face Pose?", "What is Gomukhasana?"],
+        "responses": [
+            "Cow Face Pose (Gomukhasana) stretches the hips and shoulders. How-to: Sit and stack one knee directly over the other. Reach one arm up and back, the other down and back, trying to clasp hands. Benefits: Opens tight hips and shoulders. Cautions: Use a strap if your hands don't meet.",
+            "Gomukhasana involves stacking your knees and clasping your hands behind your back. It's a deep stretch for both the upper and lower body."
+        ]
+    },
+    {
+        "tag": "pose_puppy",
+        "patterns": ["How to do Extended Puppy Pose?", "What is Uttana Shishosana?"],
+        "responses": [
+            "Extended Puppy Pose (Uttana Shishosana) is a heart-melting pose. How-to: From all fours, walk your hands forward, keeping hips over knees, and lower your chest and forehead to the floor. Benefits: Stretches the spine and shoulders. Cautions: It's a cross between Child's Pose and Downward Dog.",
+            "Puppy Pose is a beautiful shoulder and chest opener. Keep your hips high over your knees and walk your hands forward to melt your heart toward the mat."
+        ]
+    },
+    {
+        "tag": "pose_staff",
+        "patterns": ["How to do Staff Pose?", "What is Dandasana?"],
+        "responses": [
+            "Staff Pose (Dandasana) is the foundation for seated poses. How-to: Sit on the floor with legs extended straight in front of you. Press hands into the floor by your hips and sit up tall. Benefits: Improves posture and strengthens back muscles. Cautions: It looks simple, but requires active engagement.",
+            "Dandasana is an active seated pose. Sit with a long, straight spine and flex your feet. It's the seated equivalent of Mountain Pose and teaches good posture."
+        ]
+    },
+    {
+        "tag": "pose_gate",
+        "patterns": ["How to do Gate Pose?", "What is Parighasana?"],
+        "responses": [
+            "Gate Pose (Parighasana) is a kneeling side stretch. How-to: From a kneeling position, extend one leg out to the side. Bend your torso over the extended leg. Benefits: Stretches the entire side of the body. Cautions: Be gentle with the bend.",
+            "Gate Pose is like a standing side bend, but on your knees. It creates a deep stretch from your extended foot all the way to your fingertips."
+        ]
+    },
+    {
+        "tag": "pose_reclined_spinal_twist",
+        "patterns": ["How to do Reclined Spinal Twist?", "What is Supta Matsyendrasana?"],
+        "responses": [
+            "Reclined Spinal Twist (Supta Matsyendrasana) is a restorative twist. How-to: Lie on your back, hug one knee into your chest, then guide it across your body, letting it fall toward the floor. Benefits: Releases tension in the spine and back. Cautions: Keep both shoulders grounded.",
+            "This is a wonderful, relaxing twist. Lying on your back, simply let one knee drop over to the opposite side. It feels amazing for the lower back."
+        ]
+    },
+    {
+        "tag": "pose_wide_legged_forward_bend",
+        "patterns": ["How to do Wide-Legged Forward Bend?", "What is Prasarita Padottanasana?"],
+        "responses": [
+            "Wide-Legged Forward Bend (Prasarita Padottanasana) is a forward fold and hamstring stretch. How-to: Stand with feet wide and parallel. Hinge at the hips and fold forward, placing hands on the floor. Benefits: Stretches hamstrings and back. Cautions: Bend knees if hamstrings are tight.",
+            "For this pose, stand with your feet wide apart, then fold your torso down between your legs. It's a great way to release the back of the legs and the spine."
+        ]
+    },
+    {
+        "tag": "pose_firelog",
+        "patterns": ["How to do Firelog Pose?", "What is Agnistambhasana?"],
+        "responses": [
+            "Firelog Pose (Agnistambhasana) is an intense hip opener. How-to: Sit and stack your right shin directly on top of your left shin, keeping feet flexed. Benefits: Deeply stretches the outer hips. Cautions: Avoid if you have knee pain.",
+            "Also called Double Pigeon, this pose involves stacking one shin on top of the other like logs on a fire. It provides a very deep stretch for the hips."
+        ]
+    },
+    {
+        "tag": "pose_boat",
+        "patterns": ["How to do Boat Pose?", "What is Navasana?"],
+        "responses": [
+            "Boat Pose (Navasana) is a major core strengthener. How-to: Sit on the floor, lean back slightly, and lift your feet off the floor, balancing on your sit bones. Keep your spine long. Benefits: Strengthens the abdomen and hip flexors. Cautions: Start with knees bent.",
+            "Navasana is a challenging core pose. Balance on your sitting bones and lift your legs to create a 'V' shape with your body. It's amazing for building abdominal strength."
+        ]
+    },
+    {
+        "tag": "pose_handstand",
+        "patterns": ["How to do Handstand?", "What is Adho Mukha Vrksasana?"],
+        "responses": [
+            "Handstand (Adho Mukha Vrksasana) is an advanced arm balance inversion. How-to: Place hands on the floor and kick up, balancing on your hands. Benefits: Builds incredible upper body strength and confidence. Cautions: Must be learned with a teacher. Practice near a wall.",
+            "Handstand is a full inversion where you balance your entire body on your hands. It requires immense strength, balance, and practice, and should be approached with caution."
+        ]
+    },
+    {
+        "tag": "pose_marichis_pose_c",
+        "patterns": ["How to do Marichi's Pose C?", "What is Marichyasana C?"],
+        "responses": [
+            "Marichi's Pose C (Marichyasana C) is a seated twist. How-to: From a seated position, bend one knee and place the foot on the floor. Twist toward that bent knee, using your arm for leverage. Benefits: Improves spinal mobility and aids digestion. Cautions: Keep the spine long.",
+            "This is a deep twist dedicated to the sage Marichi. It involves twisting your torso against your bent leg, which helps to detoxify and improve posture."
+        ]
+    },
+    {
+        "tag": "pose_wild_thing",
+        "patterns": ["How to do Wild Thing?", "What is Camatkarasana?"],
+        "responses": [
+            "Wild Thing (Camatkarasana) is an ecstatic heart-opening backbend. How-to: From Side Plank, step your top foot behind you and lift your hips, arching your back and reaching your top arm over. Benefits: Opens the chest, shoulders, and hips. Cautions: Requires good shoulder stability.",
+            "Wild Thing is a joyful, expressive backbend. It's a combination of a side plank and a wheel pose that feels incredibly freeing and heart-opening."
+        ]
+    },
+    {
+        "tag": "pose_goddess",
+        "patterns": ["How to do Goddess Pose?", "What is Utkata Konasana?"],
+        "responses": [
+            "Goddess Pose (Utkata Konasana) is a powerful squat. How-to: Stand with feet wide, toes turned out. Bend your knees and sink your hips low, keeping your torso upright. Benefits: Strengthens the entire lower body. Cautions: Don't let your knees go past your toes.",
+            "Goddess Pose is a strong, fiery squat that builds heat and strength in the legs and hips. It's a great pose for empowerment."
+        ]
+    },
+    {
+        "tag": "pose_supported_bridge",
+        "patterns": ["How to do Supported Bridge Pose?", "What is Salamba Setu Bandhasana?"],
+        "responses": [
+            "Supported Bridge Pose is a restorative backbend. How-to: Come into Bridge Pose and slide a block under your sacrum (the flat part of your lower back). Rest your weight on the block. Benefits: Gently opens the chest and releases the lower back. Cautions: Find a comfortable height for the block.",
+            "This is a wonderfully relaxing version of Bridge. By placing a block under your hips, you can completely relax into the pose and enjoy the gentle opening."
+        ]
+    },
+    {
+        "tag": "pose_reclined_bound_angle",
+        "patterns": ["How to do Reclined Bound Angle Pose?", "What is Supta Baddha Konasana?"],
+        "responses": [
+            "Reclined Bound Angle Pose (Supta Baddha Konasana) is a restorative hip opener. How-to: Lie on your back. Bring the soles of your feet together and let your knees fall out to the sides. Benefits: A passive and gentle way to open the hips and groin. Cautions: Place blocks under your knees for support.",
+            "This is the ultimate relaxation pose for hip opening. Lie back, bring your feet together, and let gravity do the work. It's incredibly calming for the nervous system."
+        ]
+    },
+    {
+        "tag": "pose_upward_plank",
+        "patterns": ["How to do Upward Plank Pose?", "What is Purvottanasana?"],
+        "responses": [
+            "Upward Plank Pose (Purvottanasana) is a reverse plank. How-to: Sit with legs extended. Place hands behind you, fingers pointing forward. Lift your hips. Benefits: Strengthens the back, arms, and legs, and opens the chest. Cautions: Avoid with wrist or neck injuries.",
+            "Also known as Reverse Plank, this pose is a powerful way to open the front of your body while strengthening the back. It's a great counter-pose to sitting at a desk."
+        ]
+    },
+    {
+        "tag": "pose_forearm_stand",
+        "patterns": ["How to do Forearm Stand?", "What is Pincha Mayurasana?"],
+        "responses": [
+          
+            "Forearm Stand (Pincha Mayurasana) is an advanced inversion. How-to: From Dolphin Pose, walk your feet in and kick one leg up to find balance on your forearms. Benefits: Builds incredible shoulder and core strength. Cautions: Learn from a qualified teacher; requires strong shoulders.",
+            "Also called Feathered Peacock Pose, this is a beautiful and challenging inversion where you balance on your forearms. It's a major milestone in a yoga practice."
+        ]
+    },
+    {
+        "tag": "pose_eight_angle",
+        "patterns": ["How to do Eight-Angle Pose?", "What is Astavakrasana?"],
+        "responses": [
+            "Eight-Angle Pose (Astavakrasana) is a complex arm balance. How-to: Hook one leg over your upper arm, then cross your ankles and extend your legs out to the side as you press up. Benefits: Builds immense arm and core strength. Cautions: This is a very advanced pose.",
+            "Astavakrasana is a beautiful and pretzel-like arm balance that requires a great deal of hip-opening and core strength. It's named after a sage who was bent in eight places."
+        ]
+    },
+    {
+        "tag": "pose_peacock",
+        "patterns": ["How to do Peacock Pose?", "What is Mayurasana?"],
+        "responses": [
+            "Peacock Pose (Mayurasana) is an advanced arm balance. How-to: Kneel and place hands on the floor with fingers pointing back. Lean forward, placing your elbows into your abdomen, and lift your legs. Benefits: Strengthens the entire body and is said to aid digestion. Cautions: Very challenging; avoid if pregnant or with wrist issues.",
+            "In Mayurasana, you balance your entire body on your hands, with your elbows acting as a shelf for your abdomen. It's a powerful pose that builds incredible strength."
+        ]
+    },
+    {
+        "tag": "pose_noose",
+        "patterns": ["How to do Noose Pose?", "What is Pasasana?"],
+        "responses": [
+            "Noose Pose (Pasasana) is a deep squat and twist. How-to: From a deep squat, twist your torso and bind your arms around your shins. Benefits: Deeply stretches the entire body and challenges balance. Cautions: An advanced pose that requires open hips, shoulders, and spine.",
+            "Pasasana is a challenging pose that combines a squat, a twist, and a bind all in one. It's a powerful detoxifier and stretch."
+        ]
+    },
+    {
+        "tag": "pose_crane",
+        "patterns": ["How to do Crane Pose?", "What is Bakasana?"],
+        "responses": [
+            "Crane Pose (Bakasana) is often used interchangeably with Crow, but is technically done with straight arms. How-to: Similar to Crow, but press strongly to straighten the elbows. Benefits: Builds more upper body strength than crow. Cautions: Master Crow Pose first.",
+            "While similar to Crow, true Crane Pose (Bakasana) is performed with straight arms, making it a more intense challenge for your arm and shoulder strength."
+        ]
+    },
+    {
+        "tag": "pose_firefly",
+        "patterns": ["How to do Firefly Pose?", "What is Tittibhasana?"],
+        "responses": [
+            "Firefly Pose (Tittibhasana) is an advanced arm balance. How-to: From a forward fold, wiggle your arms behind your legs, place hands on the floor, and lift up, extending your legs forward. Benefits: Requires and builds hamstring flexibility and arm strength. Cautions: Extremely advanced.",
+            "In Firefly Pose, you balance on your hands with your legs extended out in front of you, hovering off the floor. It's a beautiful pose that looks like a firefly in flight."
+          ]
+    },
+    {
+        "tag": "pose_frog",
+        "patterns": ["How to do Frog Pose?", "What is Mandukasana or Bhekasana?"],
+        "responses": [
+            "Frog Pose (Mandukasana) is a very deep inner thigh and hip stretch. How-to: From all fours, widen your knees as far as you can, keeping ankles behind the knees. Lower to your forearms. Benefits: Intense opening for the hips. Cautions: Be very gentle on your knees.",
+            "Frog pose is one of the most intense hip openers. Widen your knees on the mat and relax your hips down. It's a yin-style pose that requires patience and deep breathing."
+        ]
+    },
+    {
+        "tag": "pose_heron",
+        "patterns": ["How to do Heron Pose?", "What is Krounchasana?"],
+        "responses": [
+            "Heron Pose (Krounchasana) is an intense seated hamstring stretch. How-to: From a seated position, grab the sole of one foot and extend the leg straight up towards the sky. Benefits: Deeply stretches the hamstring. Cautions: Use a strap if you can't keep the leg straight.",
+            "Heron pose is like an advanced version of Head-to-Knee pose, where you lift the extended leg up, creating a deep stretch for the back of the leg."
+        ]
+    },
+    {
+        "tag": "pose_grasshopper",
+        "patterns": ["How to do Grasshopper Pose?", "What is Parsva Bhuja Dandasana?"],
+        "responses": [
+            "Grasshopper Pose (Parsva Bhuja Dandasana) is an advanced arm balance and twist. How-to: Combines a twist with an arm balance, hooking one leg over the opposite arm and extending the other leg. Benefits: Builds incredible strength and flexibility. Cautions: A peak pose requiring extensive warmup.",
+            "Grasshopper is a complex and beautiful pose that looks like the insect it's named after. It's a fusion of a twist and an arm balance that is very challenging."
+        ]
+    },
+    {
+        "tag": "pose_high_lunge",
+        "patterns": ["How to do High Lunge?", "What is Crescent Lunge?"],
+        "responses": [
+            "High Lunge, or Crescent Lunge, is a powerful standing pose. How-to: From a lunge position, keep the back knee lifted and raise your torso and arms. Benefits: Strengthens legs and opens hips. Cautions: Challenges your balance.",
+            "High Lunge is similar to Warrior I, but you balance on the ball of your back foot. It's a great way to build leg strength and stability."
+        ]
+    },
+    {
+        "tag": "pose_humble_warrior",
+        "patterns": ["How to do Humble Warrior?", "What is Baddha Virabhadrasana?"],
+        "responses": [
+            "Humble Warrior (Baddha Virabhadrasana) is a forward fold from Warrior I. How-to: From Warrior I, interlace your hands behind your back, then fold your torso forward inside your front thigh. Benefits: Opens the shoulders and hips. Cautions: Releases the head and neck.",
+            "In Humble Warrior, you bow forward from a warrior stance, symbolizing surrender. It's a deep stretch for the shoulders and hips."
+        ]
+    },
+    {
+        "tag": "pose_king_pigeon",
+        "patterns": ["How to do King Pigeon Pose?", "What is Eka Pada Rajakapotasana?"],
+        "responses": [
+            "King Pigeon Pose is the full expression of Pigeon, involving a deep backbend. How-to: From Pigeon, bend your back knee and grab the foot, arching back. Benefits: An extremely deep stretch for the entire front body. Cautions: An advanced pose; do not force it.",
+            "This is the 'royal' version of Pigeon, where you add a deep backbend to catch your back foot. It requires very open hips, quads, and shoulders."
+        ]
+    },
+    {
+        "tag": "pose_marichis_pose_a",
+        "patterns": ["How to do Marichi's Pose A?", "What is Marichyasana A?"],
+        "responses": [
+            "Marichi's Pose A (Marichyasana A) is a forward bend with a bind. How-to: Similar to Head-to-Knee pose, but you wrap your arms around the bent shin to bind. Benefits: Stretches hamstrings and opens shoulders. Cautions: The bind is the challenging part.",
+            "This variation of Marichyasana is a forward fold, not a twist. You bind around your bent knee, which helps to deepen the hamstring stretch on the extended leg."
+        ]
+    },
+    {
+        "tag": "pose_revolved_triangle",
+        "patterns": ["How to do Revolved Triangle Pose?", "What is Parivrtta Trikonasana?"],
+        "responses": [
+            "Revolved Triangle Pose (Parivrtta Trikonasana) is a standing twist. How-to: Similar setup to Pyramid pose, but you twist your torso and bring the opposite hand to your front foot or a block. Benefits: Improves balance and aids digestion. Cautions: Very challenging for balance.",
+            "This is a deep, standing twist that challenges your stability. It's like regular Triangle Pose, but with an added rotation of the spine."
+        ]
+    },
+    {
+        "tag": "pose_revolved_side_angle",
+        "patterns": ["How to do Revolved Side Angle Pose?", "What is Parivrtta Parsvakonasana?"],
+        "responses": [
+            "Revolved Side Angle Pose (Parivrtta Parsvakonasana) is a deep standing twist. How-to: From a lunge, bring your hands to prayer and hook the opposite elbow outside your front knee. Benefits: Detoxifies the body and builds heat. Cautions: Very challenging.",
+            "This pose is a powerful combination of a lunge and a deep twist. It builds incredible strength and heat in the body."
+        ]
+    },
+    {
+        "tag": "pose_revolved_half_moon",
+        "patterns": ["How to do Revolved Half Moon Pose?", "What is Parivrtta Ardha Chandrasana?"],
+        "responses": [
+            "Revolved Half Moon Pose (Parivrtta Ardha Chandrasana) is an advanced balancing twist. How-to: It's a combination of Half Moon and a spinal twist, balancing on one hand and the opposite foot. Benefits: The ultimate challenge for balance and focus. Cautions: Extremely advanced.",
+            "Imagine doing Half Moon pose, but twisting your torso toward your standing leg. It's an incredibly difficult pose that demands supreme balance and concentration."
+        ]
+    },
+    {
+        "tag": "pose_scale",
+        "patterns": ["How to do Scale Pose?", "What is Tolasana?"],
+        "responses": [
+            "Scale Pose (Tolasana) is an arm balance that lifts you from a cross-legged position. How-to: From Lotus or an easy cross-legged seat, press your hands into the floor and lift your entire lower body. Benefits: Builds immense core and arm strength. Cautions: Requires strong wrists.",
+            "In Tolasana, you use pure arm and core power to lift your body off the floor from a seated position. It's a powerful demonstration of strength."
+        ]
+    },
+    {
+        "tag": "pose_shooting_star",
+        "patterns": ["How to do Shooting Star Pose?", "What is a variation of Vasisthasana?"],
+        "responses": [
+            "Shooting Star is a variation of Side Plank. How-to: From Side Plank, lift your top leg high and maybe catch the toe. Benefits: Adds an intense balance and hamstring challenge to Side Plank. Cautions: Master Side Plank first.",
+            "This pose takes Side Plank to the next level by lifting the top leg, creating a beautiful star shape and seriously challenging your stability."
+        ]
+    },
+    {
+        "tag": "pose_sugarcane",
+        "patterns": ["How to do Sugarcane Pose?", "What is Ardha Chandra Chapasana?"],
+        "responses": [
+            "Sugarcane Pose (Ardha Chandra Chapasana) is a variation of Half Moon. How-to: From Half Moon, bend your lifted leg's knee and catch the foot with your top hand, creating a backbend. Benefits: Opens the quads and chest. Cautions: Adds a backbend to a challenging balance pose.",
+            "Sugarcane is a beautiful, heart-opening variation of Half Moon pose. By catching your back foot, you add a quad stretch and a gentle backbend."
+        ]
+    },
+    {
+        "tag": "pose_thread_the_needle",
+        "patterns": ["How to do Thread the Needle Pose?", "What is Urdhva Mukha Pasasana?"],
+        "responses": [
+            "Thread the Needle is a gentle shoulder stretch. How-to: From all fours, slide one arm under your body, resting on your shoulder and cheek. Benefits: Releases tension in the upper back and shoulders. Cautions: A gentle, restorative pose.",
+            "This is a wonderful stretch for tight shoulders. From hands and knees, you simply 'thread' one arm through the space under your chest to release the upper back."
+        ]
+    },
+    {
+        "tag": "pose_tiptoe_squat",
+        "patterns": ["How to do Tiptoe Squat?", "What is Prapadasana?"],
+        "responses": [
+            "Tiptoe Squat (Prapadasana) is a balancing squat. How-to: Come into a squat but balance on the balls of your feet with your heels lifted. Benefits: Strengthens feet and ankles and improves focus. Cautions: Challenges your balance.",
+            "This is a variation of a squat that seriously challenges your ankle stability and concentration by having you balance on your tiptoes."
+        ]
+    },
+    {
+        "tag": "pose_tortoise",
+        "patterns": ["How to do Tortoise Pose?", "What is Kurmasana?"],
+        "responses": [
+            "Tortoise Pose (Kurmasana) is a deep forward fold and hip opener. How-to: From a wide-legged seated position, fold forward and slide your arms under your legs. Benefits: A very deep, calming forward bend. Cautions: An advanced pose for flexible hips and hamstrings.",
+            "In Kurmasana, you fold forward and tuck yourself into a little ball, like a tortoise retreating into its shell. It's a very deep and introspective pose."
+        ]
+    },
+    {
+        "tag": "pose_wind_relieving",
+        "patterns": ["How to do Wind-Relieving Pose?", "What is Pavanamuktasana?"],
+        "responses": [
+            "Wind-Relieving Pose (Pavanamuktasana) is a gentle pose. How-to: Lie on your back and hug both knees into your chest. Benefits: Gentle massage for the lower back and aids digestion. Cautions: A simple, beneficial pose for everyone.",
+            "This is a lovely pose to do anytime. Just lie on your back and give your knees a gentle hug. It's known for helping with digestion and releasing the lower back."
+        ]
+    }
+  ]
+}
